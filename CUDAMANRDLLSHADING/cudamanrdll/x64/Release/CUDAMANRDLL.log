@@ -1,0 +1,448 @@
+﻿  pch.cpp
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(153,13): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(191,21): warning C4273: “GetBrenner”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(69,30): message : 参见“GetBrenner”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(195,22): warning C4273: “GetTenegrad”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(70,30): message : 参见“GetTenegrad”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(199,23): warning C4273: “GetLaplacian”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(71,30): message : 参见“GetLaplacian”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(203,29): warning C4273: “GetSubAreaBrenner”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(79,31): message : 参见“GetSubAreaBrenner”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(207,30): warning C4273: “GetSubAreaTenegrad”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(80,31): message : 参见“GetSubAreaTenegrad”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(211,31): warning C4273: “GetSubAreaLaplacian”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(81,31): message : 参见“GetSubAreaLaplacian”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(215,21): warning C4273: “GetPosLeftFOV”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(74,27): message : 参见“GetPosLeftFOV”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(219,22): warning C4273: “GetPosRightFOV”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(75,27): message : 参见“GetPosRightFOV”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(223,21): warning C4273: “GetNegLeftFOV”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(76,27): message : 参见“GetNegLeftFOV”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(227,22): warning C4273: “GetNegRightFOV”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(77,27): message : 参见“GetNegRightFOV”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(231,26): warning C4273: “GetUnformityVs”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(82,31): message : 参见“GetUnformityVs”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(235,18): warning C4273: “GetpRR”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(84,31): message : 参见“GetpRR”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(239,18): warning C4273: “GetpRG”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(85,31): message : 参见“GetpRG”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(243,18): warning C4273: “GetpRB”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(86,31): message : 参见“GetpRB”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(247,28): warning C4273: “GetBrighnessRatio”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(72,30): message : 参见“GetBrighnessRatio”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(251,63): warning C4273: “InitializeImage”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(91,28): message : 参见“InitializeImage”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(270,21): warning C4273: “ReleaseImage”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(92,28): message : 参见“ReleaseImage”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(315,31): warning C4273: “InitializeSerialControl”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(93,27): message : 参见“InitializeSerialControl”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(334,29): warning C4273: “ReleaseSerialControl”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(94,28): message : 参见“ReleaseSerialControl”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(384,82): warning C4273: “StartVideoCapture”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(88,28): message : 参见“StartVideoCapture”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(400,25): warning C4273: “StopVideoCapture”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(89,28): message : 参见“StopVideoCapture”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(408,62): warning C4273: “SaveVideo”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(90,28): message : 参见“SaveVideo”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(417,71): warning C4273: “SaveImage”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(68,28): message : 参见“SaveImage”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(546,36): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(552,12): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(564,62): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(567,67): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(804,3): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(810,38): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(812,3): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(818,40): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(823,9): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(922,191): warning C4273: “FigureParameters”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(67,28): message : 参见“FigureParameters”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(957,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(957,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(957,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(957,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(958,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(958,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(958,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(958,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(959,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(959,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(959,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(959,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(960,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(960,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(960,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(960,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(961,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(961,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(961,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(961,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(962,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(962,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(962,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(962,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(963,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(963,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(963,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(963,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(964,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(964,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(964,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(964,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(965,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(965,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(965,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(965,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1057,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1057,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1057,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1057,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1058,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1058,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1058,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1058,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1059,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1059,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1059,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1059,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1060,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1060,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1060,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1060,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1061,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1061,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1061,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1061,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1062,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1062,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1062,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1062,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1063,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1063,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1063,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1063,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1064,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1064,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1064,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1064,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1065,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1065,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1065,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1065,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1191,64): warning C4273: “FigureCross”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(96,28): message : 参见“FigureCross”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1234,66): warning C4273: “FigureCorners”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(97,28): message : 参见“FigureCorners”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1277,62): warning C4273: “FlipImage”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(98,28): message : 参见“FlipImage”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1703,72): warning C4273: “LensShading”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(99,28): message : 参见“LensShading”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1795,81): warning C4273: “DeShading”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(100,28): message : 参见“DeShading”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1879,42): warning C4273: “OpenSerialPort”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(102,27): message : 参见“OpenSerialPort”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1912,22): warning C4273: “SetGain”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(103,27): message : 参见“SetGain”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1922,61): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1930,27): warning C4273: “SetExposure”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(104,27): message : 参见“SetExposure”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1940,61): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1947,38): warning C4273: “SetCommand”: dll 链接不一致
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.h(105,27): message : 参见“SetCommand”的前一个定义
+G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1971,65): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  dllmain.cpp
+  SerialControl.cpp
+    正在创建库 G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\x64\Release\CUDAMANRDLL.lib 和对象 G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\x64\Release\CUDAMANRDLL.exp
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 790 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  CUDAMANRDLL.vcxproj -> G:\HanMei\Endscope\Program\图像检测shinewing\CUDAMANRDLLSHADING\x64\Release\CUDAMANRDLL.dll

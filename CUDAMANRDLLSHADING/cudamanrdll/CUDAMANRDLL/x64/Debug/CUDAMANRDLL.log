@@ -1,0 +1,429 @@
+﻿  dllmain.cpp
+  pch.cpp
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(150,13): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(188,21): warning C4273: “GetBrenner”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(68,30): message : 参见“GetBrenner”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(192,22): warning C4273: “GetTenegrad”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(69,30): message : 参见“GetTenegrad”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(196,23): warning C4273: “GetLaplacian”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(70,30): message : 参见“GetLaplacian”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(200,29): warning C4273: “GetSubAreaBrenner”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(78,31): message : 参见“GetSubAreaBrenner”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(204,30): warning C4273: “GetSubAreaTenegrad”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(79,31): message : 参见“GetSubAreaTenegrad”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(208,31): warning C4273: “GetSubAreaLaplacian”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(80,31): message : 参见“GetSubAreaLaplacian”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(212,21): warning C4273: “GetPosLeftFOV”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(73,27): message : 参见“GetPosLeftFOV”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(216,22): warning C4273: “GetPosRightFOV”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(74,27): message : 参见“GetPosRightFOV”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(220,21): warning C4273: “GetNegLeftFOV”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(75,27): message : 参见“GetNegLeftFOV”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(224,22): warning C4273: “GetNegRightFOV”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(76,27): message : 参见“GetNegRightFOV”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(228,26): warning C4273: “GetUnformityVs”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(81,31): message : 参见“GetUnformityVs”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(232,17): warning C4273: “GetpRR”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(83,31): message : 参见“GetpRR”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(236,17): warning C4273: “GetpRG”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(84,31): message : 参见“GetpRG”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(240,17): warning C4273: “GetpRB”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(85,31): message : 参见“GetpRB”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(244,28): warning C4273: “GetBrighnessRatio”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(71,30): message : 参见“GetBrighnessRatio”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(248,63): warning C4273: “InitializeImage”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(90,28): message : 参见“InitializeImage”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(267,21): warning C4273: “ReleaseImage”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(91,28): message : 参见“ReleaseImage”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(349,82): warning C4273: “StartVideoCapture”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(87,28): message : 参见“StartVideoCapture”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(365,25): warning C4273: “StopVideoCapture”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(88,28): message : 参见“StopVideoCapture”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(373,62): warning C4273: “SaveVideo”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(89,28): message : 参见“SaveVideo”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(382,71): warning C4273: “SaveImage”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(67,28): message : 参见“SaveImage”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(511,36): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(517,12): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(529,62): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(532,67): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(769,3): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(775,38): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(777,3): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(783,40): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(788,9): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(887,191): warning C4273: “FigureParameters”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(66,28): message : 参见“FigureParameters”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(922,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(922,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(922,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(922,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(923,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(923,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(923,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(923,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(924,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(924,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(924,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(924,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(925,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(925,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(925,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(925,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(926,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(926,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(926,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(926,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(927,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(927,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(927,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(927,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(928,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(928,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(928,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(928,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(929,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(929,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(929,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(929,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(930,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(930,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(930,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(930,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1022,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1022,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1022,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1022,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1023,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1023,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1023,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1023,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1024,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1024,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1024,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1024,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1025,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1025,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1025,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1025,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1026,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1026,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1026,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1026,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1027,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1027,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1027,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1027,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1028,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1028,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1028,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1028,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1029,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1029,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1029,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1029,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1030,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1030,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1030,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1030,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=int
+          ]
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1156,64): warning C4273: “FigureCross”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(92,28): message : 参见“FigureCross”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1199,66): warning C4273: “FigureCorners”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(93,28): message : 参见“FigureCorners”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1242,62): warning C4273: “FlipImage”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(94,28): message : 参见“FlipImage”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1668,72): warning C4273: “LensShading”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(95,28): message : 参见“LensShading”的前一个定义
+C:\cudamanrdll\CUDAMANRDLL\pch.cpp(1759,81): warning C4273: “DeShading”: dll 链接不一致
+C:\cudamanrdll\CUDAMANRDLL\pch.h(96,28): message : 参见“DeShading”的前一个定义
+LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/FORCE”规范)
+    正在创建库 C:\cudamanrdll\x64\Debug\CUDAMANRDLL.lib 和对象 C:\cudamanrdll\x64\Debug\CUDAMANRDLL.exp
+  CUDAMANRDLL.vcxproj -> C:\cudamanrdll\x64\Debug\CUDAMANRDLL.dll
