@@ -318,7 +318,9 @@ int InitializeSerialControl() {
 #ifdef LOG_ENABLE
 	pfLog = new ofstream("TestLog.txt", std::ios_base::out);
 #endif
-	g_spcSerialController->FindPort();
+	if (!g_spcSerialController->FindPort()) {
+		return 0;
+	}
 	int nSeekSerialPort = g_spcSerialController->GetUARTNo();
 
 	if (nSeekSerialPort >= 0 && nSeekSerialPort <= 256) {
@@ -1020,7 +1022,8 @@ void FigureBrightnessRatio(cv::Mat& matSrcImage, cv::Mat& matMaskImage, double d
 
 
 
-void FigureParameters(uchar* pucImagePtr, int nImageW, int nImageH, int nFrameNo, double dRatio, int nEnFilter, double dBRThresh, int nEnDefinition, int nEnFov, int nEnBR, int nEnUnformity) {
+//void FigureParameters(uchar* pucImagePtr, int nImageW, int nImageH, int nFrameNo, double dRatio, int nEnFilter, double dBRThresh, int nEnDefinition, int nEnFov, int nEnBR, int nEnUnformity) {
+void FigureParameters(uchar* pucImagePtr, int nImageW, int nImageH, int nFrameNo, double dRatio, int nEnFilter, double dBRThresh, int nEnDefinition, int nEnFov, int nEnBR, int nEnUnformity, EstimatedResult* perTemp) {
 
 	nLeftPosFOV = 0, nRightPosFOV = 0;
 	nLeftNegFOV = 0, nRightNegFOV = 0;
@@ -1102,14 +1105,18 @@ void FigureParameters(uchar* pucImagePtr, int nImageW, int nImageH, int nFrameNo
 				FigurebrennerFloat(matSubArea9, pdSubAreaBrenner[8]);
 				FigureSobelFloat(matSubArea9, pdSubAreaTenegrad[8]);
 				FigureLaplacianFloat(matSubArea9, pdSubAreaLaplacian[8]);
+				perTemp->nDefinitionFarAlready = 2;
+				perTemp->nDefinitionNearAlready = 2;
 			}
 
 			if (nEnFov) {
 				FigureFOV(matFloatY, nLeftPosFOV, nRightNegFOV, nRightPosFOV, nLeftNegFOV);
+				perTemp->nFovAlready = 2;
 			}
 
 			if (nEnBR) {
 				FigureBrightnessRatio(matFloatY, matMaskImage, dBRThresh, dBrightnessRatio);
+				perTemp->nBrAlready = 2;
 			}
 
 			if (nEnUnformity) {
@@ -1136,6 +1143,7 @@ void FigureParameters(uchar* pucImagePtr, int nImageW, int nImageH, int nFrameNo
 				pdUnformityVs[5] = dLBV / dCenterV;
 				pdUnformityVs[6] = dCenterBV / dCenterV;
 				pdUnformityVs[7] = dRBV / dCenterV;
+				perTemp->nUnformityAlready = 2;
 			}
 		}
 	}
@@ -1200,26 +1208,29 @@ void FigureParameters(uchar* pucImagePtr, int nImageW, int nImageH, int nFrameNo
 			Figurebrenner(matSubArea9, pdSubAreaBrenner[8]);
 			FigureSobel(matSubArea9, pdSubAreaTenegrad[8]);
 			FigureLaplacian(matSubArea9, pdSubAreaLaplacian[8]);
-
+			perTemp->nDefinitionFarAlready = 2;
+			perTemp->nDefinitionNearAlready = 2;
 		}
 		if (nEnFov) {
 			
 			FigureFOV(matYImage, nLeftPosFOV, nRightNegFOV, nRightPosFOV, nLeftNegFOV);
+			perTemp->nFovAlready = 2;
 		}
 		if (nEnBR) {
 			FigureBrightnessRatio(matYImage, matMaskImage, dBRThresh, dBrightnessRatio);
+			perTemp->nBrAlready = 2;
 		}
-
-		double dLTV, dCenterTV, dRTV, dLCenterV, dCenterV, dRCenterV, dLBV, dCenterBV, dRBV;
-		FigureMeanV(matSubArea1, dLTV);
-		FigureMeanV(matSubArea2, dCenterTV);
-		FigureMeanV(matSubArea3, dRTV);
-		FigureMeanV(matSubArea4, dLCenterV);
-		FigureMeanV(matSubArea5, dCenterV);
-		FigureMeanV(matSubArea6, dRCenterV);
-		FigureMeanV(matSubArea7, dLBV);
-		FigureMeanV(matSubArea8, dCenterBV);
-		FigureMeanV(matSubArea9, dRBV);
+		if (nEnUnformity) {
+			double dLTV, dCenterTV, dRTV, dLCenterV, dCenterV, dRCenterV, dLBV, dCenterBV, dRBV;
+			FigureMeanV(matSubArea1, dLTV);
+			FigureMeanV(matSubArea2, dCenterTV);
+			FigureMeanV(matSubArea3, dRTV);
+			FigureMeanV(matSubArea4, dLCenterV);
+			FigureMeanV(matSubArea5, dCenterV);
+			FigureMeanV(matSubArea6, dRCenterV);
+			FigureMeanV(matSubArea7, dLBV);
+			FigureMeanV(matSubArea8, dCenterBV);
+			FigureMeanV(matSubArea9, dRBV);
 
 		pdUnformityVs[0] = dLTV / dCenterV;
 		pdUnformityVs[1] = dCenterTV / dCenterV;
@@ -1229,6 +1240,8 @@ void FigureParameters(uchar* pucImagePtr, int nImageW, int nImageH, int nFrameNo
 		pdUnformityVs[5] = dLBV / dCenterV;
 		pdUnformityVs[6] = dCenterBV / dCenterV;
 		pdUnformityVs[7] = dRBV / dCenterV;
+			perTemp->nUnformityAlready = 2;
+		}
 	}
 }
 

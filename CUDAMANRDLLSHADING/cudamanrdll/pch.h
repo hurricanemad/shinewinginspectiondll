@@ -64,6 +64,14 @@ using namespace std;
 #pragma comment(lib, "liblapack.lib")
 #pragma comment(lib, "liblapacke.lib")
 
+struct EstimatedResult {
+    int nDefinitionFarAlready;
+    int nDefinitionNearAlready;
+    int nFovAlready;
+    int nBrAlready;
+    int nUnformityAlready;
+    int nDarkAreaAlready;
+};
 
 /*******************************************************/
 /*@@@@@函数名:FigureParameters@@@@@@@*/
@@ -80,10 +88,11 @@ using namespace std;
 /*nEnFov 类型：int 说明：是否进行视场角检测，0表示不进行视场角检测，1表示进行视场角检测*/
 /*nEnBR 类型：int 说明：是否进行亮度比检测，0表示不进行亮度比检测，1表示进行亮度比检测*/
 /*nEnUnformity 类型：int 说明：是否进行图像均匀度检测，0表示不进行均匀度检测，1表示进行均匀度检测 */
-/*输出：空*/
+/*perTemp 类型：EstimatedResult(自定义变量) 说明：用于向C#输出信息，指示各性能检测是否完成。*/
+/*输出：*/
 /******************************************************/
 
-extern "C" DLL_EXPORT void FigureParameters(uchar * pucImagePtr, int nImageW, int nImageH, int nFrameNo, double dRatio, int nEnFilter, double dThresh, int nEnDefinition, int nEnFov, int nEnBR, int nEnUnformity);
+extern "C" DLL_EXPORT void FigureParameters(uchar * pucImagePtr, int nImageW, int nImageH, int nFrameNo, double dRatio, int nEnFilter, double dThresh, int nEnDefinition, int nEnFov, int nEnBR, int nEnUnformity, EstimatedResult* perTemp);
 extern "C" DLL_EXPORT void SaveImage( uchar * pucImagePtr, int nImageW, int nImageH, int nNo);
 extern "C" DLL_EXPORT double GetBrenner();
 extern "C" DLL_EXPORT double GetTenegrad();
