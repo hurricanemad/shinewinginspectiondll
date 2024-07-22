@@ -1028,6 +1028,8 @@ void FigureParameters(uchar* pucImagePtr, int nImageW, int nImageH, int nFrameNo
 	nLeftPosFOV = 0, nRightPosFOV = 0;
 	nLeftNegFOV = 0, nRightNegFOV = 0;
 
+	int NewImageW = 973;
+
 	cv::Mat matMaskImage = cv::Mat::zeros(nImageH, nImageW, CV_8UC1);
 	cv::rectangle(matMaskImage, cv::Rect(0, 0, 200, 200), cv::Scalar(255.0, 255.0, 255.0), -1);
 	cv::rectangle(matMaskImage, cv::Rect(nImageW - 200, nImageH - 200, 200, 200), cv::Scalar(255.0, 255.0, 255.0), -1);
@@ -1063,17 +1065,20 @@ void FigureParameters(uchar* pucImagePtr, int nImageW, int nImageH, int nFrameNo
 
 			cv::Mat matSubArea1, matSubArea2, matSubArea3, matSubArea4, matSubArea5, matSubArea6, matSubArea7, matSubArea8, matSubArea9;
 
-			matSubArea1 = matFloatY(cv::Rect(0.15 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea2 = matFloatY(cv::Rect(0.45 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea3 = matFloatY(cv::Rect(0.75 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea4 = matFloatY(cv::Rect(0.15 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea5 = matFloatY(cv::Rect(0.45 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea6 = matFloatY(cv::Rect(0.75 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea7 = matFloatY(cv::Rect(0.15 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea8 = matFloatY(cv::Rect(0.45 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea9 = matFloatY(cv::Rect(0.75 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea1 = matFloatY(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea2 = matFloatY(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea3 = matFloatY(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea4 = matFloatY(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea5 = matFloatY(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea6 = matFloatY(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea7 = matFloatY(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea8 = matFloatY(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea9 = matFloatY(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
 
 			if (nEnDefinition) {
+
+				matFloatY = matFloatY(cv::Range(0, 720), cv::Range(153.5, 1126.5));
+
 				FigurebrennerFloat(matFloatY, dBrenner);
 				FigureSobelFloat(matFloatY, dTenegrad);
 				FigureLaplacianFloat(matFloatY, dLaplacian);
@@ -1170,17 +1175,20 @@ void FigureParameters(uchar* pucImagePtr, int nImageW, int nImageH, int nFrameNo
 		//foutLog << dBrightnessRatio << endl;
 		//foutLog.close();
 
-		matSubArea1 = matYImage(cv::Rect(0.15 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea2 = matYImage(cv::Rect(0.45 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea3 = matYImage(cv::Rect(0.75 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea4 = matYImage(cv::Rect(0.15 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea5 = matYImage(cv::Rect(0.45 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea6 = matYImage(cv::Rect(0.75 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea7 = matYImage(cv::Rect(0.15 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea8 = matYImage(cv::Rect(0.45 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea9 = matYImage(cv::Rect(0.75 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea1 = matYImage(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea2 = matYImage(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea3 = matYImage(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea4 = matYImage(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea5 = matYImage(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea6 = matYImage(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea7 = matYImage(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea8 = matYImage(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea9 = matYImage(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
 
 		if (nEnDefinition) {
+
+			matYImage = matYImage(cv::Range(0, 720), cv::Range(153.5, 1126.5));
+
 			Figurebrenner(matSubArea1, pdSubAreaBrenner[0]);
 			FigureSobel(matSubArea1, pdSubAreaTenegrad[0]);
 			FigureLaplacian(matSubArea1, pdSubAreaLaplacian[0]);

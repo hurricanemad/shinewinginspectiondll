@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\shinewinginspectiondll\\git code\\shinewinginspectiondll\\CUDAMANRDLLSHADING\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C8BB492-76D5-4648-93B9-69CD885DC6C7}|CUDAMANRDLL\\CUDAMANRDLL.vcxproj|C:\\Users\\admin\\shinewinginspectiondll\\git code\\shinewinginspectiondll\\CUDAMANRDLLSHADING\\CUDAMANRDLL\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0C8BB492-76D5-4648-93B9-69CD885DC6C7}|CUDAMANRDLL\\CUDAMANRDLL.vcxproj|solutionrelative:CUDAMANRDLL\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "pch.cpp",
+              "DocumentMoniker": "C:\\Users\\admin\\shinewinginspectiondll\\git code\\shinewinginspectiondll\\CUDAMANRDLLSHADING\\cudamanrdll\\pch.cpp",
+              "RelativeDocumentMoniker": "cudamanrdll\\pch.cpp",
+              "ToolTip": "C:\\Users\\admin\\shinewinginspectiondll\\git code\\shinewinginspectiondll\\CUDAMANRDLLSHADING\\cudamanrdll\\pch.cpp",
+              "RelativeToolTip": "cudamanrdll\\pch.cpp",
+              "ViewState": "AQIAABkEAAAAAAAAAAAAABkEAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-22T03:31:25.484Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
