@@ -1,0 +1,415 @@
+﻿  pch.cpp
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(154,13): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(192,8): warning C4273: “GetBrenner”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(196,8): warning C4273: “GetTenegrad”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(200,8): warning C4273: “GetLaplacian”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(204,9): warning C4273: “GetSubAreaBrenner”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(208,9): warning C4273: “GetSubAreaTenegrad”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(212,9): warning C4273: “GetSubAreaLaplacian”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(216,5): warning C4273: “GetPosLeftFOV”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(220,5): warning C4273: “GetPosRightFOV”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(224,5): warning C4273: “GetNegLeftFOV”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(228,5): warning C4273: “GetNegRightFOV”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(232,9): warning C4273: “GetUnformityVs”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(236,9): warning C4273: “GetpRR”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(240,9): warning C4273: “GetpRG”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(244,9): warning C4273: “GetpRB”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(248,8): warning C4273: “GetBrighnessRatio”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(252,6): warning C4273: “InitializeImage”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(271,6): warning C4273: “ReleaseImage”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(316,5): warning C4273: “InitializeSerialControl”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(337,6): warning C4273: “ReleaseSerialControl”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(387,6): warning C4273: “StartVideoCapture”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(403,6): warning C4273: “StopVideoCapture”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(411,6): warning C4273: “SaveVideo”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(420,6): warning C4273: “SaveImage”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(559,36): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(565,12): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(577,62): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(580,67): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(888,34): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(894,36): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(896,35): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(902,38): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(919,9): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1027,6): warning C4273: “FigureParameters”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,104): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,104): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,104): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,104): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,89): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,89): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,89): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,89): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,67): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,67): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,67): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,67): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,42): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,42): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,42): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1072,42): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,104): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,104): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,104): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,104): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,89): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,89): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,89): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,89): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,67): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,67): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,67): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,67): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,42): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,42): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,42): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1073,42): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,104): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,104): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,104): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,104): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,89): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,89): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,89): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,89): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,67): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,67): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,67): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,67): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,42): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,42): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,42): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1074,42): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,104): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,104): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,104): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,104): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,89): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,89): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,89): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,89): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,67): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,67): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,67): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,67): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,42): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,42): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,42): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1075,42): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,104): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,104): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,104): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,104): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,89): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,89): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,89): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,89): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,67): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,67): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,67): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,67): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,42): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,42): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,42): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1076,42): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,104): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,104): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,104): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,104): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,89): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,89): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,89): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,89): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,67): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,67): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,67): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,67): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,42): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,42): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,42): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1077,42): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,104): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,104): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,104): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,104): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,89): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,89): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,89): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,89): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,67): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,67): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,67): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,67): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,42): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,42): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,42): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1078,42): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,104): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,104): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,104): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,104): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,89): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,89): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,89): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,89): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,67): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,67): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,67): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,67): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,42): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,42): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,42): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1079,42): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,104): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,104): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,104): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,104): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,104): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,89): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,89): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,89): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,89): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,89): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,67): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,67): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,67): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,67): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,67): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,42): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,42): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,42): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,42): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1080,42): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,103): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,103): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,103): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,103): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,88): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,88): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,88): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,88): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,66): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,66): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,66): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,66): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,41): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,41): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,41): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1179,41): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,103): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,103): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,103): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,103): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,88): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,88): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,88): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,88): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,66): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,66): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,66): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,66): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,41): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,41): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,41): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1180,41): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,103): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,103): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,103): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,103): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,88): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,88): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,88): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,88): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,66): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,66): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,66): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,66): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,41): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,41): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,41): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1181,41): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,103): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,103): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,103): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,103): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,88): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,88): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,88): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,88): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,66): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,66): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,66): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,66): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,41): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,41): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,41): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1182,41): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,103): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,103): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,103): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,103): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,88): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,88): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,88): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,88): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,66): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,66): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,66): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,66): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,41): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,41): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,41): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1183,41): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,103): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,103): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,103): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,103): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,88): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,88): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,88): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,88): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,66): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,66): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,66): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,66): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,41): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,41): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,41): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1184,41): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,103): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,103): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,103): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,103): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,88): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,88): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,88): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,88): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,66): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,66): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,66): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,66): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,41): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,41): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,41): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1185,41): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,103): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,103): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,103): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,103): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,88): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,88): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,88): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,88): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,66): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,66): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,66): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,66): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,41): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,41): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,41): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1186,41): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,103): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,103): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,103): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,103): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,103): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,88): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,88): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,88): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,88): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,88): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,66): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,66): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,66): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,66): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,66): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,41): warning C4244: “参数”: 从“double”转换到“_Tp”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,41): warning C4244:         with
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,41): warning C4244:         [
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,41): warning C4244:             _Tp=int
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1187,41): warning C4244:         ]
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1319,6): warning C4273: “FigureCross”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1362,6): warning C4273: “FigureCorners”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1405,6): warning C4273: “FlipImage”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1831,6): warning C4273: “LensShading”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(1923,6): warning C4273: “DeShading”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(2007,5): warning C4273: “OpenSerialPort”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(2040,5): warning C4273: “SetGain”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(2050,51): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(2058,5): warning C4273: “SetExposure”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(2068,51): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(2075,5): warning C4273: “SetCommand”: dll 链接不一致
+E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\CUDAMANRDLL\pch.cpp(2099,62): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  dllmain.cpp
+  SerialControl.cpp
+    正在创建库 E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\x64\Release\CUDAMANRDLL.lib 和对象 E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\x64\Release\CUDAMANRDLL.exp
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 786 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  CUDAMANRDLL.vcxproj -> E:\HanMei\Endscope\Program\T0.0.5\shinewinginspectiondll\CUDAMANRDLLSHADING\x64\Release\CUDAMANRDLL.dll

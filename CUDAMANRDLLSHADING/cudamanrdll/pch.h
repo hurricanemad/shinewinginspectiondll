@@ -92,7 +92,13 @@ struct EstimatedResult {
 /*输出：*/
 /******************************************************/
 
-extern "C" DLL_EXPORT void FigureParameters(uchar * pucImagePtr, int nImageW, int nImageH, int nFrameNo, double dRatio, int nEnFilter, double dThresh, int nEnDefinition, int nEnFov, int nEnBR, int nEnUnformity, EstimatedResult* perTemp);
+extern "C" DLL_EXPORT void FigureParameters(uchar * pucImagePtr,
+                                                                            int nImageW, int nImageH,
+                                                                            int nFrameNo, double dRatio, 
+                                                                            int nEnFilter, double dThresh,
+                                                                            int nEnDefinition, int nEnFov,
+                                                                            int nEnBR, int nEnUnformity,
+                                                                            int nEnWB, EstimatedResult* perTemp);
 extern "C" DLL_EXPORT void SaveImage( uchar * pucImagePtr, int nImageW, int nImageH, int nNo);
 extern "C" DLL_EXPORT double GetBrenner();
 extern "C" DLL_EXPORT double GetTenegrad();
