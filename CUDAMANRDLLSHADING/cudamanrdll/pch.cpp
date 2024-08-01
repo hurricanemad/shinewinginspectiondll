@@ -35,7 +35,11 @@ float fR = 260.0f;
 
 //int nProcessVideoCounter = 0;
 //int nProcessFrameCounter = 0;
+//White balance parameters
 int nWBCounter = 0;
+double dGRRatio = 1.0;
+double dBGRatio = 1.0;
+
 //曲线灰度增强算法变量
 double* pdCurveImagePts = NULL;
 double* pdCurveImageParams = NULL;
@@ -1021,7 +1025,87 @@ void FigureBrightnessRatio(cv::Mat& matSrcImage, cv::Mat& matMaskImage, double d
 	}
 }
 
+void convertYUY2ToRGB(uchar* pucImagePtr, int nImageW, int nImageH, cv::Mat& matRGBImage) {
+	int r, c;
+	matRGBImage = cv::Mat(nImageH, nImageW, CV_8UC3);
 
+	cv::Vec3b* pmatRGBImage = matRGBImage.ptr<cv::Vec3b>(0);
+	int nY, nU, nV;
+
+	//for (int n = 0; n < nImageW * nImageH; n++) {
+	//	pucProcessImgY[n] = pucImagePtr[2 * n];
+
+	//	m = n / 2;
+	//	pucProcessImgU[n] = pucImagePtr[4 * m + 1];
+	//	pucProcessImgV[n] = pucImagePtr[4 * m + 3];
+	//}
+
+	int m;
+	for (int n = 0; n < nImageW * nImageH; n++) {
+		nY = pucImagePtr[2 * n];
+		m = n / 2;
+
+		nU = pucImagePtr[4 * m + 1];
+		nV = pucImagePtr[4 * m + 3];
+
+
+		pmatRGBImage[n][0] = nY + 1.8556 * (nU - 128);
+		pmatRGBImage[n][1] = nY - 0.1873 * (nU - 128) - 0.4681 * (nV - 128);
+		pmatRGBImage[n][2] = nY + 1.5748 * (nV - 128) ;
+
+	}
+}
+
+void convertRGB2YUV(cv::Mat& matRGBImage, cv::Mat& matY, cv::Mat& matU, cv::Mat& matV) {
+	cv::Vec3b* pv3bRGBImage = matRGBImage.ptr<cv::Vec3b>(0);
+	matY = cv::Mat(matRGBImage.rows, matRGBImage.cols, CV_8UC1);
+	matU = cv::Mat(matRGBImage.rows, matRGBImage.cols, CV_8UC1);
+	matV = cv::Mat(matRGBImage.rows, matRGBImage.cols, CV_8UC1);
+
+	uchar* pmatY = matY.ptr<uchar>(0);
+	uchar* pmatU = matU.ptr<uchar>(0);
+	uchar* pmatV = matV.ptr<uchar>(0);
+	int n;
+	int nR, nG, nB;
+	for (n = 0; n < matRGBImage.rows * matRGBImage.cols; n++) {
+		nR = pv3bRGBImage[n][2];
+		nG = pv3bRGBImage[n][1];
+		nB = pv3bRGBImage[n][0];
+
+		pmatY[n] = 0.2126 * nR + 0.7152 * nG + 0.0722 * nB;
+		pmatU[n] = -0.1146 * nR - 0.3854 * nG + 0.5 * nB + 128;
+		pmatV[n] = 0.5 * nR - 0.4542 * nG - 0.0458 * nB + 128;
+	}
+	
+}
+
+
+void FigureWBRatios(cv::Mat& matRGBImage, double&  dGRRatio, double& dBGRatio) {
+	cv::Vec3b* pv3bRGBImage = matRGBImage.ptr<cv::Vec3b>(0);
+
+	double dB = 0, dG = 0, dR = 0;
+	for (int n = 0; n < matRGBImage.rows * matRGBImage.rows; n++) {
+		dB += pv3bRGBImage[n][0];
+		dG += pv3bRGBImage[n][1];
+		dR += pv3bRGBImage[n][2];
+	}
+
+	dGRRatio = dG/dR;
+	dBGRatio = dG/dB;
+}
+
+void WhiteBalance(cv::Mat matSrcImage, cv::Mat& matResultImage, double& dGRRatio, double& dBGRatio) {
+	cv::Mat matInputImage = matSrcImage.clone();
+
+	cv::Vec3b* pmatInputImage = matInputImage.ptr<cv::Vec3b>(0);
+	cv::Vec3b* pmatResultImage = matResultImage.ptr<cv::Vec3b>(0);
+
+	for (int n = 0; n < matSrcImage.rows * matSrcImage.cols; n++) {
+		pmatResultImage[n][0] = pmatInputImage[n][0] * dBGRatio;
+		pmatResultImage[n][1] = pmatInputImage[n][1];
+		pmatResultImage[n][2] = pmatInputImage[n][2] * dGRRatio;
+	}
+}
 
 //void FigureParameters(uchar* pucImagePtr, int nImageW, int nImageH, int nFrameNo, double dRatio, int nEnFilter, double dBRThresh, int nEnDefinition, int nEnFov, int nEnBR, int nEnUnformity) {
 void FigureParameters(uchar* pucImagePtr,
@@ -1029,7 +1113,7 @@ void FigureParameters(uchar* pucImagePtr,
 									 int nFrameNo, double dRatio,
 									 int nEnFilter, double dBRThresh,
 									 int nEnDefinition, int nEnFov, int nEnBR, int nEnUnformity,
-									 int nEnWB, EstimatedResult* perTemp) {
+									 int nEnWB, int nEnWBParam, EstimatedResult* perTemp) {
 
 	nLeftPosFOV = 0, nRightPosFOV = 0;
 	nLeftNegFOV = 0, nRightNegFOV = 0;
@@ -1052,6 +1136,13 @@ void FigureParameters(uchar* pucImagePtr,
 	if (nEnFilter) {
 		if (nFrameNo == 0) {
 			*pmatPreImage = cv::Mat(nImageH, nImageW, CV_8UC1);
+			if (nEnWBParam) {
+				cv::Mat matRGBImage;
+				convertYUY2ToRGB(pucImagePtr, nImageW, nImageH, matRGBImage);
+				FigureWBRatios(matRGBImage, dGRRatio, dBGRatio);
+				perTemp->nWhiteBalance = 2;
+			}
+
 			//从YUY2格式的图像中提取Y分量。
 			if (!nEnWB) {
 				//程序不执行白平衡时
@@ -1059,7 +1150,16 @@ void FigureParameters(uchar* pucImagePtr,
 			}
 			else {
 				//程序执行白平衡时
-				convertYUY2ToRGB(pucImagePtr, nImageW, nImageH, pmatPreImage->ptr<uchar>(0));
+				cv::Mat matRGBImage;
+				convertYUY2ToRGB(pucImagePtr, nImageW, nImageH, matRGBImage);
+				//run the White Balance
+
+
+				WhiteBalance(matRGBImage, matRGBImage, dGRRatio, dBGRatio);
+
+
+				cv::Mat matY, matU, matV;
+				convertRGB2YUV(matRGBImage, *pmatPreImage, matU, matV);
 			}
 
 			dFormerRatio = dRatio;
@@ -1072,35 +1172,58 @@ void FigureParameters(uchar* pucImagePtr,
 			//    ReadParam(dRatio);
 			//}
 
+			if (nEnWBParam) {
+				cv::Mat matRGBImage;
+				convertYUY2ToRGB(pucImagePtr, nImageW, nImageH, matRGBImage);
+				FigureWBRatios(matRGBImage, dGRRatio, dBGRatio);
+				perTemp->nWhiteBalance = 2;
+			}
+
 			//从YUY2格式的图像中提取Y分量
-			convertYUY2ToY(pucImagePtr, nImageW, nImageH, matYImage.ptr<uchar>(0));
+			if (!nEnWB) {
+				//程序不执行白平衡时
+				convertYUY2ToY(pucImagePtr, nImageW, nImageH, matYImage.ptr<uchar>(0));
+			}
+			else {
+				//程序执行白平衡时
+				cv::Mat matRGBImage;
+				convertYUY2ToRGB(pucImagePtr, nImageW, nImageH, matRGBImage);
+
+				//run the White Balance
+
+				WhiteBalance(matRGBImage, matRGBImage, dGRRatio, dBGRatio);
+
+				cv::Mat matY, matU, matV;
+				convertRGB2YUV(matRGBImage, matYImage, matU, matV);
+			}
 
 			MANRFilterCPU(matYImage.ptr<uchar>(0), pmatPreImage->ptr<uchar>(0), matFloatY.ptr<float>(0), nImageW, nImageH, dRatio);
 
 			cv::Mat matSubArea1, matSubArea2, matSubArea3, matSubArea4, matSubArea5, matSubArea6, matSubArea7, matSubArea8, matSubArea9;
 
-			//matSubArea1 = matFloatY(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			//matSubArea2 = matFloatY(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			//matSubArea3 = matFloatY(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			//matSubArea4 = matFloatY(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			//matSubArea5 = matFloatY(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			//matSubArea6 = matFloatY(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			//matSubArea7 = matFloatY(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			//matSubArea8 = matFloatY(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			//matSubArea9 = matFloatY(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea1 = matFloatY(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea2 = matFloatY(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea3 = matFloatY(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea4 = matFloatY(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea5 = matFloatY(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea6 = matFloatY(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea7 = matFloatY(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea8 = matFloatY(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			matSubArea9 = matFloatY(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
 
 
-			matSubArea1 = matFloatY(cv::Rect(0.15 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea2 = matFloatY(cv::Rect(0.45 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea3 = matFloatY(cv::Rect(0.75 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea4 = matFloatY(cv::Rect(0.15 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea5 = matFloatY(cv::Rect(0.45 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea6 = matFloatY(cv::Rect(0.75 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea7 = matFloatY(cv::Rect(0.15 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea8 = matFloatY(cv::Rect(0.45 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-			matSubArea9 = matFloatY(cv::Rect(0.75 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			//matSubArea1 = matFloatY(cv::Rect(0.15 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			//matSubArea2 = matFloatY(cv::Rect(0.45 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			//matSubArea3 = matFloatY(cv::Rect(0.75 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			//matSubArea4 = matFloatY(cv::Rect(0.15 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			//matSubArea5 = matFloatY(cv::Rect(0.45 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			//matSubArea6 = matFloatY(cv::Rect(0.75 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			//matSubArea7 = matFloatY(cv::Rect(0.15 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			//matSubArea8 = matFloatY(cv::Rect(0.45 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+			//matSubArea9 = matFloatY(cv::Rect(0.75 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
 
 			if (nEnDefinition) {
+
 				matFloatY = matFloatY(cv::Range(0, 720), cv::Range(153.5, 1126.5));
 
 				FigurebrennerFloat(matFloatY, dBrenner);
@@ -1179,13 +1302,32 @@ void FigureParameters(uchar* pucImagePtr,
 	//这段else语句包含的代码不包含时域滤波功能。
 	else {
 		cv::Mat matYImage = cv::Mat(nImageH, nImageW, CV_8UC1);
+		if (nEnWBParam) {
+			cv::Mat matRGBImage;
+			convertYUY2ToRGB(pucImagePtr, nImageW, nImageH, matRGBImage);
+			FigureWBRatios(matRGBImage, dGRRatio, dBGRatio);
+			perTemp->nWhiteBalance = 2;
+		}
+
 		//从YUY2格式的图像中提取Y分量
-		convertYUY2ToY(pucImagePtr, nImageW, nImageH, matYImage.ptr<uchar>(0));
+		if (!nEnWB) {
+			//程序不执行白平衡时
+			convertYUY2ToY(pucImagePtr, nImageW, nImageH, matYImage.ptr<uchar>(0));
+		}
+		else {
+			//程序执行白平衡时
+			cv::Mat matRGBImage;
+			convertYUY2ToRGB(pucImagePtr, nImageW, nImageH, matRGBImage);
+
+			//run the White Balance
+			WhiteBalance(matRGBImage, matRGBImage, dGRRatio, dBGRatio);
+
+			cv::Mat matY, matU, matV;
+			convertRGB2YUV(matRGBImage, matYImage, matU, matV);
+		}
 
 
-		Figurebrenner(matYImage, dBrenner);
-		FigureSobel(matYImage, dTenegrad);
-		FigureLaplacian(matYImage, dLaplacian);
+
 
 
 		cv::Mat matSubArea1, matSubArea2, matSubArea3, matSubArea4, matSubArea5,
@@ -1199,28 +1341,34 @@ void FigureParameters(uchar* pucImagePtr,
 		//foutLog << dBrightnessRatio << endl;
 		//foutLog.close();
 
-		//matSubArea1 = matYImage(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		//matSubArea2 = matYImage(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		//matSubArea3 = matYImage(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		//matSubArea4 = matYImage(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		//matSubArea5 = matYImage(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		//matSubArea6 = matYImage(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		//matSubArea7 = matYImage(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		//matSubArea8 = matYImage(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		//matSubArea9 = matYImage(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea1 = matYImage(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea2 = matYImage(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea3 = matYImage(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea4 = matYImage(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea5 = matYImage(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea6 = matYImage(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea7 = matYImage(cv::Rect(0.5 * nImageW - 0.4 * NewImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea8 = matYImage(cv::Rect(0.5 * nImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		matSubArea9 = matYImage(cv::Rect(0.5 * nImageW + 0.4 * NewImageW - 0.05 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
 
 
-		matSubArea1 = matYImage(cv::Rect(0.15 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea2 = matYImage(cv::Rect(0.45 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea3 = matYImage(cv::Rect(0.75 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea4 = matYImage(cv::Rect(0.15 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea5 = matYImage(cv::Rect(0.45 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea6 = matYImage(cv::Rect(0.75 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea7 = matYImage(cv::Rect(0.15 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea8 = matYImage(cv::Rect(0.45 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
-		matSubArea9 = matYImage(cv::Rect(0.75 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		//matSubArea1 = matYImage(cv::Rect(0.15 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		//matSubArea2 = matYImage(cv::Rect(0.45 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		//matSubArea3 = matYImage(cv::Rect(0.75 * nImageW, 0.2 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		//matSubArea4 = matYImage(cv::Rect(0.15 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		//matSubArea5 = matYImage(cv::Rect(0.45 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		//matSubArea6 = matYImage(cv::Rect(0.75 * nImageW, 0.5 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		//matSubArea7 = matYImage(cv::Rect(0.15 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		//matSubArea8 = matYImage(cv::Rect(0.45 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
+		//matSubArea9 = matYImage(cv::Rect(0.75 * nImageW, 0.8 * nImageH - 0.05 * nImageW, 0.1 * nImageW, 0.1 * nImageW));
 
 		if (nEnDefinition) {
+			matYImage = matYImage(cv::Range(0, 720), cv::Range(153.5, 1126.5));
+
+			Figurebrenner(matYImage, dBrenner);
+			FigureSobel(matYImage, dTenegrad);
+			FigureLaplacian(matYImage, dLaplacian);
+
 			Figurebrenner(matSubArea1, pdSubAreaBrenner[0]);
 			FigureSobel(matSubArea1, pdSubAreaTenegrad[0]);
 			FigureLaplacian(matSubArea1, pdSubAreaLaplacian[0]);
@@ -1272,14 +1420,14 @@ void FigureParameters(uchar* pucImagePtr,
 			FigureMeanV(matSubArea8, dCenterBV);
 			FigureMeanV(matSubArea9, dRBV);
 
-		pdUnformityVs[0] = dLTV / dCenterV;
-		pdUnformityVs[1] = dCenterTV / dCenterV;
-		pdUnformityVs[2] = dRTV / dCenterV;
-		pdUnformityVs[3] = dLCenterV / dCenterV;
-		pdUnformityVs[4] = dRCenterV / dCenterV;
-		pdUnformityVs[5] = dLBV / dCenterV;
-		pdUnformityVs[6] = dCenterBV / dCenterV;
-		pdUnformityVs[7] = dRBV / dCenterV;
+			pdUnformityVs[0] = dLTV / dCenterV;
+			pdUnformityVs[1] = dCenterTV / dCenterV;
+			pdUnformityVs[2] = dRTV / dCenterV;
+			pdUnformityVs[3] = dLCenterV / dCenterV;
+			pdUnformityVs[4] = dRCenterV / dCenterV;
+			pdUnformityVs[5] = dLBV / dCenterV;
+			pdUnformityVs[6] = dCenterBV / dCenterV;
+			pdUnformityVs[7] = dRBV / dCenterV;
 			perTemp->nUnformityAlready = 2;
 		}
 	}

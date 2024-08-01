@@ -65,12 +65,13 @@ using namespace std;
 #pragma comment(lib, "liblapacke.lib")
 
 struct EstimatedResult {
-    int nDefinitionFarAlready;
-    int nDefinitionNearAlready;
-    int nFovAlready;
-    int nBrAlready;
-    int nUnformityAlready;
-    int nDarkAreaAlready;
+    int nDefinitionFarAlready;  //远场分辨率执行标志
+    int nDefinitionNearAlready;     //近场分辨率执行标志
+    int nFovAlready;    //视场角执行标志
+    int nBrAlready;     //亮度比例执行标志
+    int nUnformityAlready;  //图像均匀性执行标志
+    int nDarkAreaAlready;   //暗区面积执行标志
+    int nWhiteBalance;  //白平衡执行标志
 };
 
 /*******************************************************/
@@ -98,7 +99,7 @@ extern "C" DLL_EXPORT void FigureParameters(uchar * pucImagePtr,
                                                                             int nEnFilter, double dThresh,
                                                                             int nEnDefinition, int nEnFov,
                                                                             int nEnBR, int nEnUnformity,
-                                                                            int nEnWB, EstimatedResult* perTemp);
+                                                                            int nEnWB, int nEnWBParam, EstimatedResult* perTemp);
 extern "C" DLL_EXPORT void SaveImage( uchar * pucImagePtr, int nImageW, int nImageH, int nNo);
 extern "C" DLL_EXPORT double GetBrenner();
 extern "C" DLL_EXPORT double GetTenegrad();
